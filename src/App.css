@@ -1,10 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Open+Sans&display=swap');
+
+html {
+    background-image: url(http://eskipaper.com/images/free-hd-background-2.jpg);
+    text-align: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+;
+
+
+}
 .App {
-
+    color: white;
+    font-size:25px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
 
 .App-header {
   background-color: #282c34;
@@ -15,11 +27,40 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
   color: #09d3ac;
 }
+
+.boardSize {
+    /* background: #444; */
+    /* border: 1px solid #555; */
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 80px;
+}
+
+#resetButton {
+    margin-top: 2%;
+    /* background-image: url('Ricknmorty.jpg'); */
+    background-size: cover;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    ;
+}
+
+
+.header{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+
 
 /* button {
     padding: 60px;

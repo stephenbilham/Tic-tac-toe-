@@ -15,7 +15,6 @@ class Board extends Component{
             xTurn: true,
             history: [],
             boxes: Array(9).fill(null),
-            noTurn: true,
         }
     }
 
@@ -33,14 +32,13 @@ class Board extends Component{
             }
 
 
-            boxes[index] = this.state.xTurn ? 'X': 'O'
-            history.push(this.state.xTurn ? 'X': 'O')
+            boxes[index] = this.state.xTurn ? '❌': '⭕️'
+            history.push(this.state.xTurn ? '❌': '⭕️')
 
             this.setState({
                 boxes: boxes,
                 history: history,
                 xTurn: !this.state.xTurn,
-                noTurn: false,
             })
         }
     }
@@ -68,7 +66,7 @@ class Board extends Component{
         } else if(!winner && isFilled) {
             status = 'Game drawn!'
         } else {
-            status = `It is ${(this.state.xTurn ? 'X' : 'O')}'s turn.`
+            status = `It is your turn ${(this.state.xTurn ? 'player one ❌' : 'player two ⭕️')}.`
         }
 
         return (
@@ -115,7 +113,7 @@ class Board extends Component{
                     />
                     <br />
                 </div>
-                <button onClick = {this.handleReset}> Restart Game </button>
+                <button id = 'resetButton' onClick = {this.handleReset}> Restart Game </button>
           </div>
         );
       }

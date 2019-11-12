@@ -25,7 +25,11 @@ html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
 
+h1{ 
+  margin-block-start: 0.10em;
+  margin-block-end: 0.300em;
 }
 
 .App-link {

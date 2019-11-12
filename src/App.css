@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Open+Sans&display=swap');
 
 html {
-    background-image: url(http://eskipaper.com/images/free-hd-background-2.jpg);
-    text-align: center;
-    height: 100%;
+    background-image: url("ricknmortyspace.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -35,17 +33,44 @@ html {
 }
 
 .boardSize {
-    /* background: #444; */
-    /* border: 1px solid #555; */
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 80px;
+ 
+    border: 5px solid #555; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px; 
 }
+
+.grid {
+    min-height: 75px;
+    min-width: 75px;
+    height: 90vmin;
+    width:90vmin;
+    max-height: 400px;
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box {
+    border: 1px solid #fff
+}
+
+.face{
+    max-height: 100px;
+    max-width: 100px;
+    justify-content: center;
+    align-self: center;
+}
+
 
 #resetButton {
     margin-top: 2%;
-    /* background-image: url('Ricknmorty.jpg'); */
     background-size: cover;
     padding: 10px;
     font-weight: bold;
@@ -56,23 +81,10 @@ html {
 
 .header{
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 100px;
+    font-size: 90px;
     color: white;
 }
 
-
-
-/* button {
-    padding: 60px;
-} */
-
-/* .boardSize {
-    text-align: center; */
-
-/* } */
-/*
-.boxSize {
-text-align: center;
-max-width: 75px;
-max-height: 75px;
-} */
+#box { 
+    border: 5px solid #555; 
+}
